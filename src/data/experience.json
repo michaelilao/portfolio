@@ -1,0 +1,59 @@
+{
+	"experiences": [
+		{
+			"id": "Full Stack Developer - Independent Software Contractor",
+			"title": "Full Stack Developer",
+			"company": "Independent Software Contractor",
+			"startDate": "May 2021",
+			"endDate": "present",
+			"skills": ["React.js", "Bootstrap", "Express.js", "MySQL", "IIS", "Redux"],
+			"items": [
+				"Developed a React Web App to manage a retail company's internal inventory and sales system, with configuration to support multiple users and companies.",
+				"Collaborated with backend developers to create an API for integration of frontend and backend",
+				"Developed Express.js backend with SQL DB and  hosted on IIS Servers.",
+				"Integrated 3rd party API's for an RFID system to keep track of physical inventory and live pricing API to update prices daily.",
+				"Delivered updates and features on schedule, and debugged production issues to maintain 24 hour uptime."
+			]
+		},
+		{
+			"id": "Application Developer - MHIRJ",
+			"title": "Application Developer (Co-op)",
+			"company": "MHIRJ",
+			"startDate": "May 2021",
+			"endDate": "August 2022",
+			"skills": ["React.js", "MUI", "Python", "Flask", "MSSQL", "Redux", "Docker", "Okta", "Azure"],
+			"items": [
+				"Managed Azure Services and DevOps Repos, created and deployed app services using Docker and Azure Pipelines.",
+				"Architected, designed, and developed internal SPA React-Redux and Python Flask web tools within a team of 4 developers.",
+				"Overhauled existing tools to optimize SQL queries by 80% on tables with 2M+ records.",
+				"Lead migration of on-premises services to Azure environment with network specialists.",
+				"Integrated Okta and SSO into .NET and React/Flask apps."
+			]
+		},
+		{
+			"id": "Full Stack Developer - Todotoronto",
+			"title": "Full Stack Developer (Internship)",
+			"company": "Todotoronto",
+			"startDate": "May 2020",
+			"endDate": "August 2020",
+			"skills": ["React.js", "Express.js", "Gitlab", "Stripe.js", "Redux"],
+			"items": [
+				"Developed an E-commerce web app using React-Redux, using an Express.js RESTful API backend and MySQL database.",
+				"Collaborated with a team of 5 developers using GitLab agile boards for managing sprints and software development.",
+				"Implemented CI/CD pipelines for production and testing environments.",
+				"Implemented payment solution using Stripe.js ",
+				"Collaborated with design and marketing teams to create new features and UI’s using Figma.",
+				"Successfully launched whatstudu.com beta to over 1000 users."
+			]
+		},
+		{
+			"id": "Project Control Officer - CGI",
+			"title": "Project Control Officer",
+			"company": "CGI",
+			"startDate": "September 2019",
+			"endDate": "May 2020",
+			"skills": ["Selenium", "Python", "Jira"],
+			"items": ["Utilized Jira for progress tracking of on-going projects and simplified IT ticket submission by 50% by creating an automated process using Python and Selenium."]
+		}
+	]
+}
