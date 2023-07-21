@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 
 type Props = {
 	experience: Experience;
@@ -30,6 +30,7 @@ export default function Experience({ experience }: Props) {
 			</li>
 		);
 	});
+
 	return (
 		<div className={"my-4 m-auto lg:w-5/12 md:w-8/12 bg-light-grey rounded-lg drop-shadow transition [-webkit-tap-highlight-color:transparent] dark:border-slate-800/75 dark:bg-slate-800/75	dark:hover:bg-slate-800 print:p-0 " + (isOpen ? "border-slate-400" : "border-slate-200")} onClick={onClickHandler}>
 			<div className="p-6">
@@ -40,7 +41,7 @@ export default function Experience({ experience }: Props) {
 					</button>
 				</div>
 				<h5 className="py-1 font-normal">
-					{startDate} -- {endDate}
+					{startDate} &#8212; {endDate}
 				</h5>
 				<h5 className="font-normal">{company}</h5>
 				<div className="flex flex-wrap">{skillsContent}</div>
