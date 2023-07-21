@@ -40,9 +40,7 @@ export default function Experience({ experience }: Props) {
 						<FaChevronDown className={"h-6 w-6 stroke-slate-400 transition duration-300 " + (isOpen ? "scale-y-[-1]" : "")} />
 					</button>
 				</div>
-				<h5 className="py-1 font-normal">
-					{startDate} &#8212; {endDate}
-				</h5>
+				<h5 className="py-1 font-normal">{endDate.length ? `${startDate} \u2014 ${endDate}` : startDate}</h5>
 				<h5 className="font-normal">{company}</h5>
 				<div className="flex flex-wrap">{skillsContent}</div>
 			</div>

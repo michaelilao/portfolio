@@ -19,7 +19,7 @@ export const htmlToExperiences = async (buffer: Buffer) => {
 		let endDate;
 		if (dates.length !== 2) {
 			startDate = dates[0];
-			endDate = dates[0];
+			endDate = "";
 		} else {
 			startDate = dates[0];
 			endDate = dates[1];
