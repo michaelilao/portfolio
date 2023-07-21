@@ -1,6 +1,19 @@
 import Image from "next/image";
-import ExperienceList from "./components/ExperienceList";
-export default function Home() {
+import experince from "@/data/experience.json";
+import Experience from "@/app/components/Experience";
+
+import { getGoogleDriveData } from "@/lib/googleDrive";
+import { htmlToExperiences } from "@/lib/convertDocx";
+
+export default async function Home() {
+	const buffer: Buffer = await getGoogleDriveData();
+	let experiences: Experience[];
+	if (buffer) {
+		experiences = await htmlToExperiences(buffer);
+	} else {
+		experiences = experince.experiences;
+	}
+
 	return (
 		<div className="p-4 w-full">
 			<section id="profilepicture" className="w-full mx-auto">
@@ -8,11 +21,14 @@ export default function Home() {
 			</section>
 			<section id="headings">
 				<h1 className="pt-4 font-bold text-center text-3xl">Michael Ilao</h1>
-				<h4 className="py-3 text-center font-thin text-2xl">Full Stack Developer</h4>
+				<h4 className="py-1 text-center font-thin text-2xl">Full Stack Developer</h4>
+				<h4 className="pb-2 text-center font-thin text-lg">Toronto, ON</h4>
 				<h4 className="text-center font-normal text-lg text-teal">React.js, Node.js, Python, SQL</h4>
 			</section>
 			<section id="experience">
-				<ExperienceList />
+				{experiences.map((e) => {
+					return <Experience key={e.id} experience={e} />;
+				})}
 			</section>
 		</div>
 	);
