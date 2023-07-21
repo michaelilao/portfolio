@@ -27,7 +27,7 @@ export const htmlToExperiences = async (buffer: Buffer) => {
 
 		const itemsRaw = entry.split("<li>");
 		const items: string[] = [];
-		const skills: string[] = [];
+		const skills = new Set<string>();
 
 		var regex = /<strong>(.+?)<\/strong>/g;
 
@@ -35,7 +35,7 @@ export const htmlToExperiences = async (buffer: Buffer) => {
 			if (index !== 0) {
 				value.match(regex)?.forEach((skillRaw) => {
 					const skill = skillRaw.replace(/(<([^>]+)>)/gi, "").trim();
-					skills.push(skill);
+					if (skill.length > 0) skills.add(skill);
 				});
 				items.push(value.replace(/(<([^>]+)>)/gi, ""));
 			}
@@ -46,7 +46,7 @@ export const htmlToExperiences = async (buffer: Buffer) => {
 			company: company.trim(),
 			startDate: startDate.trim(),
 			endDate: endDate.trim(),
-			skills: skills,
+			skills: Array.from(skills),
 			items: items,
 		};
 		experienceEntry.id = experienceEntry.title + " " + experienceEntry.company;
