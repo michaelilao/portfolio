@@ -17,7 +17,7 @@ export default function Experience({ experience }: Props) {
 
 	const skillsContent = skills.map((s, index) => {
 		return (
-			<div key={s} className={`${index === 0 ? "ml-0" : ""} m-2 p-2 border rounded-lg border-gray font-bold text-teal`}>
+			<div key={s} className={`my-2 mr-3 p-2 border rounded-lg border-gray font-bold text-teal`}>
 				{s}
 			</div>
 		);
