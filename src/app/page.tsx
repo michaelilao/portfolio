@@ -1,5 +1,4 @@
 import Image from "next/image";
-import experince from "@/data/experience.json";
 import Experience from "@/app/components/Experience";
 
 import { getGoogleDriveData } from "@/lib/googleDrive";
@@ -8,16 +7,12 @@ import { htmlToExperiences } from "@/lib/convertDocx";
 export default async function Home() {
 	const buffer: Buffer = await getGoogleDriveData();
 	let experiences: Experience[];
-	if (buffer) {
-		experiences = await htmlToExperiences(buffer);
-	} else {
-		experiences = experince.experiences;
-	}
+	experiences = await htmlToExperiences(buffer);
 
 	return (
 		<div className="p-4 w-full">
 			<section id="profilepicture" className="w-full mx-auto">
-				<Image unoptimized={true} className="border-4 border-black drop-shadow-xl shadow-black rounded-full mx-auto mt-8" src="/images/profilepic.jpg" width={250} height={250} alt="Michael Ilao" priority />
+				<Image unoptimized={false} className="border-4 border-black drop-shadow-xl shadow-black rounded-full mx-auto mt-8" src="/images/profilepic.jpg" width={250} height={250} alt="Michael Ilao" priority />
 			</section>
 			<section id="headings">
 				<h1 className="pt-4 font-bold text-center text-3xl">Michael Ilao</h1>

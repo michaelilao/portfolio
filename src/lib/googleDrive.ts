@@ -1,6 +1,16 @@
 import { google } from "googleapis";
 
 export const getGoogleDriveData = async () => {
+	const env = process.env.NODE_ENV;
+
+	if (env === "development") {
+		const fs = require("fs");
+		const path = require("path");
+		const dataDirectory = path.join(process.cwd(), "src/data/Michael_Ilao_Resume_2023.docx");
+		const resume = fs.readFileSync(dataDirectory);
+		return resume;
+	}
+
 	const credentials = {
 		type: process.env.TYPE,
 		project_id: process.env.PROJECT_ID,
