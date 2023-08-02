@@ -3,7 +3,6 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { headers } from "next/dist/client/components/headers";
 
 export async function GET(request: NextRequest) {
 	const token = request.headers.get("revalidate_token");
