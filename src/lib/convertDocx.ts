@@ -8,12 +8,13 @@ export const htmlToExperiences = async (buffer: Buffer) => {
 	const experience = experienceRaw.split("<p><strong>");
 	const experienceList: Experience[] = experience.map((entry) => {
 		const company = entry.split("</strong></p>")[0].split("\t")[0].split("</")[0];
-
 		// Length of <p><em> is 7
 		const secondHeadingRaw = entry.substring(entry.indexOf("<p><em>") + 7, entry.lastIndexOf("</em></p>"));
 
-		const title = secondHeadingRaw.substring(0, secondHeadingRaw.indexOf("20"));
-		const dateRaw = secondHeadingRaw.substring(secondHeadingRaw.indexOf("20"));
+		const title = secondHeadingRaw.substring(0, secondHeadingRaw.indexOf("\t"));
+
+		const dateRaw = secondHeadingRaw.substring(secondHeadingRaw.indexOf("\t"));
+
 		const dates = dateRaw.split(/[-\u2013]/);
 		let startDate;
 		let endDate;

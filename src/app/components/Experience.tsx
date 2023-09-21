@@ -32,7 +32,7 @@ export default function Experience({ experience }: Props) {
 	});
 
 	return (
-		<div className={"my-4 m-auto lg:w-5/12 md:w-8/12 bg-light-grey rounded-lg drop-shadow transition [-webkit-tap-highlight-color:transparent] dark:border-slate-800/75 dark:bg-slate-800/75	dark:hover:bg-slate-800 print:p-0 " + (isOpen ? "border-slate-400" : "border-slate-200")} onClick={onClickHandler}>
+		<div className={"my-4 m-auto max-w-screen-md bg-light-grey rounded-lg drop-shadow transition [-webkit-tap-highlight-color:transparent] dark:border-slate-800/75 dark:bg-slate-800/75	dark:hover:bg-slate-800 print:p-0 " + (isOpen ? "border-slate-400" : "border-slate-200")} onClick={onClickHandler}>
 			<div className="p-6">
 				<div className="flex justify-between">
 					<h1 className="font-bold text-lg py-1">{title}</h1>{" "}

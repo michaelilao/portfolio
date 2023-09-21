@@ -1,7 +1,7 @@
 import { google } from "googleapis";
 
 export const getGoogleDriveData = async () => {
-	const env = process.env.NODE_ENV;
+	const env = "development"; //process.env.NODE_ENV;
 
 	if (env === "development") {
 		const fs = require("fs");
