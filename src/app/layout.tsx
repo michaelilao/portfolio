@@ -25,13 +25,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-beige text-grey min-w-80`}>
+      <body
+        className={`${roboto.className} bg-beige text-grey min-w-80 min-h-screen flex flex-col`}
+      >
         <div className="flex min-h-screen flex-col items-center ">
           <header className="w-full">
             <Nav />
           </header>
           <main className="h-full w-full">{children}</main>
-          <footer className="w-full">
+          <footer className="w-full mt-auto">
             <Footer />
           </footer>
         </div>

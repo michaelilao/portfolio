@@ -1,5 +1,5 @@
 import ProjectShowCase from "./components/ProjectShowCase";
-export default async function Home() {
+export default function Home() {
   const novaImages = [
     {
       source: "/images/nova/home.png",
@@ -84,7 +84,9 @@ export default async function Home() {
           solutions.
         </h1>
         <hr className="my-4 md:my-16" />
-        <h2 className="my-4 md:mb-8 text-lg">Here is some of work</h2>
+        <h2 className="my-4 md:mb-8 text-lg">
+          Here is some past client projects
+        </h2>
         <div className="flex flex-col gap-y-12 md:gap-y-24">
           <ProjectShowCase
             title={"Nova Diamonds"}

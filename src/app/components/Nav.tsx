@@ -9,23 +9,12 @@ export default function Nav() {
         </Link>
       </div>
       <div className="flex space-x-12 md:w-1/3 justify-center">
-        <a
-          target="_blank"
-          className="hover:text-teal"
-          href="https://github.com/michaelilao"
-        >
-          GitHub
-        </a>
-        <a
-          target="_blank"
-          className="hover:text-teal"
-          href="https://www.linkedin.com/in/ilaom-mcmaster/"
-        >
-          LinkedIn
-        </a>
-        <Link href="/" className="hover:text-teal">
-          Resume
+        <Link href="/experience" className="hover:text-teal">
+          Experience
         </Link>
+        <a className="hover:text-teal" href="/">
+          Resume
+        </a>
       </div>
     </nav>
   );
