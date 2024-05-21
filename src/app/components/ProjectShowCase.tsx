@@ -60,7 +60,7 @@ export default function ProjectShowCase({
         </div>
         <div id="tech-list" className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <Pill title={tech} />
+            <Pill title={tech} key={tech} />
           ))}
         </div>
       </div>
