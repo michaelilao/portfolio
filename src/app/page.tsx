@@ -9,9 +9,11 @@ export default function Home() {
 				<h1 className="text-2xl md:text-5xl font-normal h-full text-center">
 					I Build Apps
 				</h1>
-				<h3 className="mt-4 text-center">For small businesses</h3>
+				<h3 className="mt-4 text-center">
+					For small businesses accross industries
+				</h3>
 				<h2 className="my-4 md:mb-8 text-lg">
-					Here are some past client and personal projects
+					Past client and personal projects
 				</h2>
 				<div className="flex flex-col gap-y-12 md:gap-y-24">
 					{projects.map((p) => {
