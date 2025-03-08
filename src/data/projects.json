@@ -1,0 +1,152 @@
+{
+	"projects": [
+		{
+			"id": "Nova Diamonds",
+			"title": "Nova Diamonds",
+			"description": "Sales and Inventory Management System",
+			"skills": ["React", "Bootstrap", "Express", "MSSQL", "Swagger", "IIS"],
+			"background": "linear-gradient(160deg, #4E54C8, #8F94FB)",
+			"images": [
+				{
+					"source": "/images/nova/home.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Nova Home Page"
+				},
+				{
+					"source": "/images/nova/category.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Nova Category Page"
+				},
+				{
+					"source": "/images/nova/item.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Nova Jewelleru Item Page"
+				},
+				{
+					"source": "/images/nova/memo.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Nova Memo Page"
+				}
+			]
+		},
+		{
+			"id": "Optimus Services",
+			"title": "Optimus Services",
+			"description": "Website redesign and GSuite deployment",
+			"skills": ["Next.js", "Typescript", "Tailwind", "Tina.io", "Vercel"],
+			"background": "linear-gradient(45deg, #396AFC, #2948F0)",
+
+			"images": [
+				{
+					"source": "/images/optimus/home.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Optimus Home Page"
+				},
+				{
+					"source": "/images/optimus/staff.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Optimus Staffing Page"
+				},
+				{
+					"source": "/images/optimus/faq.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Optimus FAQ Page"
+				}
+			]
+		},
+		{
+			"id": "MACH9AERO",
+			"title": "MACH9AERO",
+			"description": "Sales tool for designing and customizing a Shark Aircraft",
+			"skills": ["React.js", "Typescript", "Tailwind"],
+			"background": "linear-gradient(90deg, #031D44, #04395E)",
+			"images": [
+				{
+					"source": "/images/mach9/map.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Mach9 Map"
+				},
+				{
+					"source": "/images/mach9/design.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Mach9 Design"
+				},
+				{
+					"source": "/images/mach9/quote.png",
+					"width": 3024,
+					"height": 1594,
+					"alt": "Mach9 Quote"
+				}
+			]
+		},
+		{
+			"id": "Hoop Heads",
+			"title": "Hoop Heads",
+			"description": "Fantasy Basketball App for IOS",
+			"skills": ["React Native", "Expo", "Golang", "MySQL", "OAuth 2"],
+			"background": "linear-gradient(270deg, #8c52ff, #252739)",
+			"link": "https://hoopheads.dev",
+			"logo": "/images/hoopheads/logo-rounded.png",
+			"mobile": true,
+			"images": [
+				{
+					"source": "/images/hoopheads/iphone-mockups/home-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Home Page"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/livegame-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Livegame"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/lineup-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Lineup"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/playerpickups-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Player Pickups"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/optimize-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Optimize"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/players-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Players"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/playerview-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Playerview"
+				},
+				{
+					"source": "/images/hoopheads/iphone-mockups/account-portrait.png",
+					"width": 300,
+					"height": 640,
+					"alt": "Hoop Heads Account"
+				}
+			]
+		}
+	]
+}
